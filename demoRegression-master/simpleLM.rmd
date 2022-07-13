@@ -62,3 +62,14 @@ summary.lm(simp)
 
 If we would use HEADWTH then we would get a lower Adjusted R-squared meaning it would not be as useful as using some of the other variables we are given. Even the residual standard error is much larger than the other two variables we have used, which can mean we would get more errors than the other predictions. 
 
+```{r}
+simp <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+While using the variable CHEST we see that it is better than using the variable AGE, where it has a greater adjusted r- squared value, but it is not as great if we compare it to the value of the adjusted r- squared, where CHEST has a smaller value than HEADLEN. So in comparison HEADLEN is still the better variable to use to find the better predictions of total length. Both also have a medium sized residual standard error, but HEADLEN is still the one with a smaller variable. 
+
+
+
