@@ -72,4 +72,4 @@ summary.lm(simp)
 While using the variable CHEST we see that it is better than using the variable AGE, where it has a greater adjusted r- squared value, but it is not as great if we compare it to the value of the adjusted r- squared, where CHEST has a smaller value than HEADLEN. So in comparison HEADLEN is still the better variable to use to find the better predictions of total length. Both also have a medium sized residual standard error, but HEADLEN is still the one with a smaller variable. 
 
 
-
+So when we compare all the results we came up with, can can conclude it by saying the variable that would be best suited for predicting the bears' total length would be head length, where it has the largest Adjusted R- squared and a smaller Residual standard error. the next best variable to use would be chest, followed by neck, both having a relatively good Adjusted R- squared. The variables that would not be as suited to help the predictions of the length of the bears would be the age and head width, both of them having a small Adjusted R- squared value, and a relatively big value for error. 
