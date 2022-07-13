@@ -32,6 +32,7 @@ new <- data.frame(NECK=c(17,22,26))
 predict(simp,new)
 predict(simp,new,se.fit=TRUE)
 ```
+
 ## Surely there is another variable that can better predict LENGTH than NECK. Find one and compare its performance to that of neck by it value of Adjusted-Rsquared (bigger is better).
 
 ```{r}
@@ -40,3 +41,5 @@ plot(LENGTH~AGE,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
+
+When we create another boxplot to compare which variable would be better to compare a length of a bear, we see that by doing the comparison with the NECK we get a lower Adjusted R-squared value than doing a comparison with AGE. Yes, it is a small increase, but we can also see the difference in the appearance of the boxplot. 
