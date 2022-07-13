@@ -53,3 +53,12 @@ summary.lm(simp)
 
 The Adjusted R- squared value for using HEADLEN instead of AGE is much larger, meaning that if we would use the variable HEADLEN would give us better predictions for the total length of the bear. We can also see that based on the actual boxplot that the HEADLEN seems to have more unified points that are more uniformed to the line. 
 
+```{r}
+simp <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+If we would use HEADWTH then we would get a lower Adjusted R-squared meaning it would not be as useful as using some of the other variables we are given. Even the residual standard error is much larger than the other two variables we have used, which can mean we would get more errors than the other predictions. 
+
